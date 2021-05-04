@@ -1,0 +1,101 @@
+.main-content {
+    margin-left: 280px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+    position: fixed;
+    left: 280px;
+    width: calc(100% - 280px);
+    top: 0;
+    z-index: 100;
+}
+
+header h2 {
+    color: #222
+}
+
+header label span {
+    font-size: 1.7rem;
+    padding-right: 1rem;
+}
+.search-wrapper {
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    overflow-x: hidden;
+}
+
+.search-wrapper span {
+    display: inline-block;
+    padding: 0rem 1rem;
+    font-size: 1.5rem;
+}
+.search-wrapper input {
+    height: 100%;
+    padding: .5rem;
+    border: none;
+    outline: none;
+}
+
+.user-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+/* .user-wrapper small {
+    display: inline-block;
+    color: grey;
+} */
+
+.user-detail {
+    display: inline-block;
+    color: grey;
+    padding: .5rem;
+}
+.user-detail h4 {
+    font-size: 1rem;
+}
+
+.main-section {
+    margin-top: 110px;
+    padding: 2rem 1.5rem;
+    background: #f0f0f0;
+    min-height: calc(100vh - 90px);
+}
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+    margin-top: 1rem;
+}
+
+.card-single {
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    border-radius: 2px;
+    padding: 2rem;
+}
+
+.card-single div:last-child span {
+    color: red;
+    font-size: 3rem;
+}
+.card-single div:first-child span{
+    color: grey;
+}
+.card-single:last-child{
+    background: red;
+}
+
+.card-single:last-child h1,
+.card-single:last-child div:first-child span,
+.card-single:last-child div:last-child span {
+    color: #fff;
+}

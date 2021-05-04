@@ -9,16 +9,45 @@ const Sidebar = () => {
     return (
         <>
             <div className="sidebar">
+                <div className="sidebar-brand">
+                    <h1><span></span>Code Stack</h1>
+                </div>
                 <div className="d-flex flex-md-column pt-3">
-                        <h4 className="m-2 user-profile">Nashon</h4>
+                        <h4 className="m-2 user-profile">Jane Doe</h4>
                         <h5 className="m-2 user-profile text-muted">Admin</h5>
                 </div>
-                <div className='d-flex flex-md-column mb-3 align-content-start'>
-                    <Link to="/" className=" items-center mb-2">
-                    <span>
-                    <AiIcons.AiOutlineHome className="m-2" />Home
-                    </span>
-                    </Link>
+                <div className='nav-items'>
+                    <ul>
+                        <li>
+                            <Link to="/" className="item mb-2 active">
+                                <span>
+                                    <AiIcons.AiOutlineHome className="mr-3 item-icon" />Home
+                                </span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/" className="item mb-2">
+                                <span>
+                                    <AiIcons.AiOutlineHome className="mr-3" />Projects
+                                </span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/" className=" item mb-2">
+                                <span>
+                                    <AiIcons.AiOutlineHome className="mr-3" />Home
+                                </span>
+                            </Link>
+                        </li>
+                        <li>
+                            <Link to="/" className=" item mb-2">
+                                <span>
+                                    <AiIcons.AiOutlineHome className="mr-3" />Home
+                                </span>
+                            </Link>
+                        </li>
+                    </ul>
+                   
                 </div>
                     
             </div>

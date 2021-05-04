@@ -39,8 +39,8 @@ const PrivateScreen = ({ history }) => {
         <span className="">{ error }</span>
     ) : (
         <>
-            <Navbar />        
             <Sidebar />
+            <Navbar />
         </>
     )
 }

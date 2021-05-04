@@ -1,3 +1,54 @@
-.sidebar {
-    width: 35px;
+:root {
+    --secondary: rgb(230, 67, 152);
+    --primary: rgb(244, 11, 104);
+    --background: #0B0C10;
 }
+.sidebar {
+    width: 280px;
+    border-right: thin solid #2c2c2c;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    position: fixed;
+    z-index: 100;
+}
+
+.nav-items li {
+    width: 100%;
+    
+}
+
+.nav-items a {
+    /* color: ; */
+    display: block;
+    font-size: 1.1rem;
+}
+
+.nav-items span{
+    font-size: 1.3rem;
+}
+
+.nav-items a.active {
+    background-color: rgba(0, 171, 85, 0.08);
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    color: rgb(0, 171, 85);
+    width: 100%;
+    
+}
+
+.item span {
+    margin-left: 2rem;
+    font-size: 1rem;
+}
+
+.item a span:first-child{
+    font-size: 1.5rem;
+    padding-right: 1rem; 
+}
+
+
+
+
+
